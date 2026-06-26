@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Briefing — Cabine Pro</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><span class="logo">CP</span><span><h1>Cabine Pro</h1><p>Briefing da partida</p></span></a>
+      <nav class="links">
+        <a href="index.html">Produto</a><a href="app.html">Demo</a><a class="active" href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a><a href="validar.html">Validar</a>
+        <button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button>
+      </nav>
+    </header>
+
+    <main class="section app-layout">
+      <aside class="sidebar">
+        <a href="app.html">Dashboard</a><a class="active" href="briefing.html">Briefing</a><a href="cabine.html">Modo Cabine</a><a href="fontes.html">Fontes</a><a href="validar.html">Validação</a>
+      </aside>
+
+      <section>
+        <div class="grid" style="grid-template-columns:1fr 320px">
+          <div class="card">
+            <div><span class="badge neutral">Brasileirão Série A</span> <span class="badge neutral">Rodada 22</span> <span class="badge neutral">Maracanã</span></div>
+            <div class="match-title"><span class="team"><span class="crest">FL</span>Flamengo</span><strong>VS</strong><span class="team"><span class="crest">PA</span>Palmeiras</span></div>
+            <p>Jogo com cara de decisão na parte alta da tabela. Flamengo chega forte como mandante, Palmeiras aparece como visitante competitivo e com repertório de jogo grande. O briefing prioriza contexto de disputa direta, bola parada, duelo dos técnicos e jogadores pendurados.</p>
+            <div class="actions"><span class="badge ok">Pronto para transmissão</span><span class="badge high">Fontes fortes: 13/14</span><span class="badge mid">2 alertas</span></div>
+          </div>
+          <aside class="score-card">
+            <h3>Confiança do briefing</h3>
+            <div class="ring"><b>96%</b></div>
+            <p>Pronto para uso, exceto escalações e pendurados que devem ser checados antes do ar.</p>
+          </aside>
+        </div>
+
+        <nav class="tabs"><a href="#resumo">Resumo</a><a href="#ficha">Ficha</a><a href="#times">Times</a><a href="#historico">Histórico</a><a href="#narrativas">Narrativas</a><a href="#alertas">Alertas</a></nav>
+
+        <details open id="resumo"><summary>01 · Resumo de abertura</summary><div class="details-body"><p id="resumoTexto">Flamengo x Palmeiras tem peso de confronto direto. O Flamengo tenta transformar o fator Maracanã em vantagem, enquanto o Palmeiras costuma crescer em jogos grandes e fora de casa. As principais histórias são a disputa pela parte alta da tabela, o duelo dos técnicos, os pendurados e a bola parada.</p><button class="btn small" data-copy="resumoTexto">Copiar resumo</button></div></details>
+
+        <details open id="ficha"><summary>02 · Ficha da partida</summary><div class="details-body"><div class="grid g3"><div class="card flat"><h4>Competição</h4><p>Brasileirão Série A</p><span class="badge ok">Confirmado</span></div><div class="card flat"><h4>Estádio</h4><p>Maracanã — Rio de Janeiro</p><span class="badge ok">Confirmado</span></div><div class="card flat"><h4>Uso recomendado</h4><p>Narração + comentários</p><span class="badge high">Alta confiança</span></div></div></div></details>
+
+        <details open id="times"><summary>03 · Times e personagens</summary><div class="details-body"><div class="grid g2"><div class="card flat"><h4>Flamengo</h4><ul><li>Mandante costuma propor jogo e pressionar alto.</li><li>Bola parada ofensiva pode ser caminho importante.</li><li>Atenção para transição defensiva após perda.</li></ul></div><div class="card flat"><h4>Palmeiras</h4><ul><li>Equipe confortável em jogo grande fora de casa.</li><li>Boa capacidade de controlar ritmo e acelerar pelos lados.</li><li>Elenco permite mudanças sem perder intensidade.</li></ul></div></div></div></details>
+
+        <details open id="historico"><summary>04 · Histórico do confronto</summary><div class="details-body"><p>Confronto interestadual que ganhou peso nacional por decisões e jogos recentes. No produto real, este bloco deve buscar últimos 10 jogos, confrontos no estádio, finais, tabus e artilheiros do duelo.</p><span class="badge high">Alta confiança no formato · dados simulados</span></div></details>
+
+        <details open id="narrativas"><summary>05 · Narrativas para transmissão</summary><div class="details-body"><div class="grid g2"><div class="card flat"><span class="badge ok">Confirmado</span><h4>Jogo de seis pontos</h4><p>Impacto direto na tabela e no ambiente dos clubes.</p></div><div class="card flat"><span class="badge high">Alta confiança</span><h4>Duelo de técnicos</h4><p>Bom gancho para falar de modelo de jogo, pressão e ajustes.</p></div><div class="card flat" data-risk="verify"><span class="badge mid">Verificar</span><h4>Personagem do jogo</h4><p>Depende da escalação final e deve sair do Modo Seguro até confirmar.</p></div><div class="card flat"><span class="badge high">Alta confiança</span><h4>Torcida como fator</h4><p>Maracanã cheio muda o tom emocional da transmissão.</p></div></div></div></details>
+
+        <details open id="alertas"><summary>06 · Alertas críticos</summary><div class="details-body"><div class="grid g2"><div class="card flat"><span class="badge mid">Verificar</span><h4>Escalações prováveis</h4><p>Confirmar aproximadamente duas horas antes da bola rolar.</p></div><div class="card flat"><span class="badge mid">Verificar</span><h4>Pendurados e suspensos</h4><p>Checar na fonte oficial da competição antes de falar ao vivo.</p></div></div><div class="actions"><a class="btn primary" href="cabine.html">Abrir Modo Cabine</a><a class="btn" href="fontes.html">Ver fontes e auditoria</a></div></div></details>
+      </section>
+    </main>
+  </div>
+  <nav class="bottom-nav"><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a><a href="validar.html">Validar</a></nav>
+  <div class="toast"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
