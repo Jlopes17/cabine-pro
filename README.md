@@ -1,32 +1,55 @@
 # Cabine Pro
 
-**Cabine Pro** é um produto de briefing pré-jogo para narradores, comentaristas, produtores, criadores de conteúdo e entusiastas de futebol.
+Cabine Pro é um produto de briefing pré-jogo para narradores, comentaristas, produtores, criadores de conteúdo e entusiastas de futebol.
 
-A proposta não é apenas “gerar texto com IA”. A proposta é entregar um briefing de transmissão com **fonte, confiança, rastreabilidade e Modo Seguro**.
+A proposta não é apenas gerar texto com IA. A proposta é entregar um briefing de transmissão com **fonte, confiança, rastreabilidade e Modo Seguro**.
 
-> A IA não é fonte da verdade. Ela organiza, resume e transforma evidências verificadas em material de cabine.
+> A IA organiza. A fonte valida. O narrador decide.
 
 ## Status
 
-Protótipo premium para validação inicial.
+Protótipo premium multi-page para validar com usuários reais, especialmente narradores/produtores.
 
-Nesta fase, os dados são simulados e servem para validar produto, UX, fluxo, posicionamento e valor percebido antes de integrar APIs pagas ou vender oficialmente.
+Nesta fase, os dados são simulados. O objetivo é validar produto, fluxo, UX, confiança e valor percebido antes de integrar APIs pagas ou vender oficialmente.
 
-## Fluxo do produto
+## Estrutura do protótipo
 
-1. Landing page
-2. Login / demo
-3. Área logada
-4. Criar briefing
-5. Briefing da partida
-6. Modo Cabine
-7. Fontes e confiabilidade
-8. Auditoria
-9. Equipe
-10. Planos / subscription
-11. Políticas e segurança
+```txt
+cabine-pro/
+  index.html              # Landing page
+  login.html              # Login/demo
+  app.html                # Dashboard logado + criar briefing
+  briefing.html           # Briefing completo da partida
+  cabine.html             # Modo Cabine
+  fontes.html             # Fontes, confiança e auditoria
+  validar.html            # Roteiro para validar com amigo
+  legal.html              # Segurança, disclaimer e conduta
+  assets/
+    css/styles.css        # Design system + dark mode
+    js/main.js            # Toggle dark mode + interações
+  docs/                   # Documentação de produto, fontes e validação
+  .github/ISSUE_TEMPLATE/ # Templates de bug, validação, fonte e segurança
+```
 
-## Regra central de confiança
+## Como testar
+
+Abra `index.html` no navegador ou publique como site estático.
+
+Fluxo recomendado:
+
+1. `index.html` — entender a proposta.
+2. `login.html` — entrar na demo.
+3. `app.html` — criar/abrir briefing.
+4. `briefing.html` — revisar conteúdo e alertas.
+5. `cabine.html` — testar Modo Cabine.
+6. `fontes.html` — revisar fontes e auditoria.
+7. `validar.html` — coletar feedback do usuário.
+
+## Dark mode
+
+Todas as páginas têm toggle **Dark/Light** na navegação. A preferência fica salva no navegador via `localStorage`.
+
+## Regras de confiança
 
 - **Confirmado:** fonte oficial, clube, federação, competição, súmula, regulamento ou API licenciada.
 - **Alta confiança:** provedor reconhecido, veículo editorial forte ou múltiplas fontes independentes.
@@ -37,26 +60,14 @@ Nesta fase, os dados são simulados e servem para validar produto, UX, fluxo, po
 
 O Modo Seguro só deve mostrar informações que possam ser usadas ao vivo com segurança. Rumores, conflitos e dados pendentes ficam ocultos ou sinalizados.
 
-## Como abrir o protótipo
+## Publicar
 
-Abra o arquivo `index.html` diretamente no navegador.
+O protótipo é estático e pode ser publicado em:
 
-Depois, para deploy simples:
-
-- GitHub Pages
-- Vercel
-- Netlify
-
-## Estrutura
-
-```txt
-cabine-pro/
-  index.html
-  docs/
-  .github/ISSUE_TEMPLATE/
-  README.md
-```
+- GitHub Pages;
+- Vercel;
+- Netlify.
 
 ## Próximo passo
 
-Usar as issues do GitHub para validar absolutamente tudo antes de transformar em SaaS pago.
+Publicar o site e validar com um narrador/produtor usando o roteiro de `validar.html`.
