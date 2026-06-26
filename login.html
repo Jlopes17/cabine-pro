@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — Cabine Pro</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><span class="logo">CP</span><span><h1>Cabine Pro</h1><p>Entrar na demo</p></span></a>
+      <nav class="links">
+        <a href="index.html">Produto</a><a class="active" href="login.html">Login</a><a href="app.html">Demo</a><a href="validar.html">Validar</a><a href="legal.html">Segurança</a>
+        <button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="section-head"><div><span class="kicker">Acesso</span><h2>Entrar na Cabine Pro</h2><p>Para validação com seu amigo, este login é simulado. Ele serve para mostrar como o fluxo real funcionaria.</p></div></div>
+      <div class="login-shell">
+        <form class="card form" data-login-form>
+          <div><span class="badge high">Demo</span><h3 style="margin-top:12px">Acesso de teste</h3><p>Use os dados abaixo e entre na área logada.</p></div>
+          <div class="field"><label for="email">Email</label><input class="input" id="email" type="email" value="demo@cabinepro.com.br" /></div>
+          <div class="field"><label for="password">Senha</label><input class="input" id="password" type="password" value="cabinepro" /></div>
+          <label class="check"><input type="checkbox" checked /> Aceito o disclaimer editorial, política de uso e código de conduta.</label>
+          <button class="btn primary block" type="submit">Entrar na demo</button>
+          <a class="btn block" href="app.html">Pular login e abrir dashboard</a>
+        </form>
+        <aside class="dark-panel">
+          <span class="kicker">No produto real</span>
+          <h2>Login com segurança e contexto.</h2>
+          <ul>
+            <li>Login por email, Google ou SSO de equipe no futuro.</li>
+            <li>Perfis: narrador, comentarista, produtor, criador ou entusiasta.</li>
+            <li>Permissões por equipe: owner, editor e viewer.</li>
+            <li>Logs de auditoria para alterações em briefings.</li>
+          </ul>
+          <div class="actions"><span class="badge ok">LGPD-ready no futuro</span><span class="badge high">Equipe</span><span class="badge neutral">Auditoria</span></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <nav class="bottom-nav"><a href="index.html">Produto</a><a href="login.html">Login</a><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a></nav>
+  <div class="toast"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
