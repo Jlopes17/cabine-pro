@@ -7,48 +7,37 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="nav">
-      <a class="brand" href="index.html"><span class="logo">CP</span><span><h1>Cabine Pro</h1><p>Modo Cabine</p></span></a>
-      <nav class="links">
-        <a href="index.html">Produto</a><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a class="active" href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a><a href="validar.html">Validar</a>
-        <button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button>
-      </nav>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="app.html"><span class="logo">CP</span><span class="brand-title"><h1>Cabine Pro</h1><p>Modo Cabine</p></span></a>
+      <nav class="navlinks"><a href="app.html">Dashboard</a><a href="briefing.html">Briefing</a><a class="active" href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a><button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button></nav>
     </header>
 
-    <main class="section app-layout">
-      <aside class="sidebar">
-        <a href="app.html">Dashboard</a><a href="briefing.html">Briefing</a><a class="active" href="cabine.html">Modo Cabine</a><a href="fontes.html">Fontes</a><a href="validar.html">Validação</a>
-      </aside>
-
+    <main class="section app-shell">
+      <aside class="sidebar"><a href="app.html">Visão geral</a><a href="briefing.html">Briefing</a><a class="active" href="cabine.html">Modo Cabine</a><a href="fontes.html">Fontes</a></aside>
       <section>
-        <div class="section-head"><div><span class="kicker">Ao vivo</span><h2>Modo Cabine</h2><p>Tela de consulta limpa para pré-jogo e transmissão. O toggle de Modo Seguro controla o que pode aparecer para uso ao vivo.</p></div></div>
+        <div class="appbar"><div><span class="kicker">Ao vivo</span><h2>Flamengo x Palmeiras</h2><p style="color:var(--muted);margin:6px 0 0">Texto limpo para usar na preparação e na cabine.</p></div><span class="badge ok">Modo Seguro ativo</span></div>
         <div class="grid" style="grid-template-columns:1fr 340px">
           <section class="teleprompter" data-teleprompter>
             <div>
-              <span class="kicker">Modo Seguro ON</span>
+              <span class="kicker">Abertura sugerida</span>
               <h2>Flamengo x Palmeiras</h2>
               <p id="aberturaCabine">Boa noite. Flamengo e Palmeiras fazem um dos grandes jogos da rodada, com peso de confronto direto e clima de decisão no Maracanã.</p>
-              <p><strong>Narrativas seguras:</strong> jogo de seis pontos, duelo de técnicos, bola parada e torcida como fator.</p>
+              <p><strong>Narrativas seguras:</strong> jogo de seis pontos, duelo de técnicos, bola parada e fator Maracanã.</p>
               <p data-risk="verify"><strong>Verificar antes do ar:</strong> escalações prováveis, pendurados e possíveis retornos de lesão.</p>
             </div>
-            <div class="actions">
-              <button class="btn primary" data-copy="aberturaCabine">Copiar abertura</button>
-              <button class="btn" data-safe-toggle data-state="on">Modo Seguro: ON</button>
-              <button class="btn" data-font-plus>A+</button>
-              <button class="btn" data-font-minus>A−</button>
-              <button class="btn" data-fullscreen>Tela cheia</button>
-            </div>
+            <div class="actions"><button class="btn primary" data-copy="aberturaCabine">Copiar abertura</button><button class="btn" data-safe-toggle data-state="on">Modo Seguro: ON</button><button class="btn" data-font-plus>A+</button><button class="btn" data-font-minus>A−</button></div>
           </section>
           <aside class="grid">
-            <div class="card"><h3>Checklist antes do ar</h3><label class="check"><input type="checkbox" /> Escalações confirmadas</label><label class="check"><input type="checkbox" /> Pendurados checados</label><label class="check"><input type="checkbox" /> Fontes críticas revisadas</label><label class="check"><input type="checkbox" /> Modo Seguro ligado</label></div>
-            <div class="card"><h3>Cartões rápidos</h3><p><strong>Seguro:</strong> jogo de seis pontos · duelo de técnicos · bola parada · fator Maracanã.</p><p><strong>Não cravar:</strong> escalação, lesão e bastidor sem confirmação.</p></div>
+            <div class="card"><h3>Checklist</h3><label class="check"><input type="checkbox" /> Escalações oficiais conferidas</label><label class="check"><input type="checkbox" /> Pendurados e suspensos checados</label><label class="check"><input type="checkbox" /> Fontes críticas revisadas</label><label class="check"><input type="checkbox" /> Modo Seguro ligado</label></div>
+            <div class="card"><h3>Cartões rápidos</h3><p><strong>Seguro:</strong> confronto direto, Maracanã, duelo de técnicos, bola parada.</p><p><strong>Não cravar:</strong> lesões e escalações sem confirmação.</p></div>
+            <div class="card"><h3>Score</h3><div class="progress"><span style="width:96%"></span></div><p>96% · 2 alertas de revisão</p></div>
           </aside>
         </div>
       </section>
     </main>
   </div>
-  <nav class="bottom-nav"><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a><a href="validar.html">Validar</a></nav>
+  <nav class="bottom-nav"><a href="app.html">Home</a><a href="novo-briefing.html">Criar</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a></nav>
   <div class="toast"></div>
   <script src="assets/js/main.js"></script>
 </body>
