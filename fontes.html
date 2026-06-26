@@ -7,60 +7,45 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="nav">
-      <a class="brand" href="index.html"><span class="logo">CP</span><span><h1>Cabine Pro</h1><p>Fontes e auditoria</p></span></a>
-      <nav class="links">
-        <a href="index.html">Produto</a><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a class="active" href="fontes.html">Fontes</a><a href="validar.html">Validar</a>
-        <button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button>
-      </nav>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="app.html"><span class="logo">CP</span><span class="brand-title"><h1>Cabine Pro</h1><p>Trust Center</p></span></a>
+      <nav class="navlinks"><a href="app.html">Dashboard</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a class="active" href="fontes.html">Fontes</a><button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button></nav>
     </header>
 
-    <main class="section app-layout">
-      <aside class="sidebar">
-        <a href="app.html">Dashboard</a><a href="briefing.html">Briefing</a><a href="cabine.html">Modo Cabine</a><a class="active" href="fontes.html">Fontes</a><a href="legal.html">Segurança</a>
-      </aside>
-
+    <main class="section app-shell">
+      <aside class="sidebar"><a href="app.html">Visão geral</a><a href="briefing.html">Briefing</a><a href="cabine.html">Modo Cabine</a><a class="active" href="fontes.html">Fontes</a><a href="legal.html">Segurança</a></aside>
       <section>
-        <div class="section-head"><div><span class="kicker">Confiança</span><h2>Fontes, riscos e auditoria.</h2><p>Esta é a área que mais importa para segurança: mostra o que é confirmado, o que é alta confiança, o que precisa verificar e o que fica bloqueado.</p></div></div>
+        <div class="appbar"><div><span class="kicker">Trust Center</span><h2>Fontes e auditoria</h2><p style="color:var(--muted);margin:6px 0 0">Veja por que o briefing está ou não pronto para uso ao vivo.</p></div><span class="badge ok">13/14 fontes fortes</span></div>
 
-        <section class="card">
-          <h3>Revisão de fontes do briefing</h3>
-          <div class="actions">
-            <button class="btn small dark" data-source-filter="all">Todas</button>
-            <button class="btn small" data-source-filter="ok">Confirmadas</button>
-            <button class="btn small" data-source-filter="high">Alta confiança</button>
-            <button class="btn small" data-source-filter="mid">Verificar</button>
-            <button class="btn small" data-source-filter="bad">Cuidado</button>
-          </div>
+        <div class="grid g4">
+          <div class="card compact"><span class="badge ok">Confirmado</span><div class="stat"><span class="stat-num">8</span><span>claims</span></div></div>
+          <div class="card compact"><span class="badge high">Alta</span><div class="stat"><span class="stat-num">5</span><span>claims</span></div></div>
+          <div class="card compact"><span class="badge mid">Revisar</span><div class="stat"><span class="stat-num">2</span><span>alertas</span></div></div>
+          <div class="card compact"><span class="badge bad">Bloqueado</span><div class="stat"><span class="stat-num">1</span><span>rumor</span></div></div>
+        </div>
 
-          <div class="source-row" data-source-level="ok"><span class="badge ok">Confirmado</span><div><strong>CBF / competição</strong><p>Tabela, rodada, cartões, súmula e suspensões. Usar como camada oficial quando disponível.</p></div><a class="btn small" href="docs/source-policy.md">Política</a></div>
-          <div class="source-row" data-source-level="ok"><span class="badge ok">Confirmado</span><div><strong>Sites oficiais dos clubes</strong><p>Relacionados, coletivas, comunicados, lesões confirmadas e retornos oficiais.</p></div><a class="btn small" href="docs/source-validation-rules.md">Regras</a></div>
-          <div class="source-row" data-source-level="high"><span class="badge high">Alta confiança</span><div><strong>API esportiva licenciada</strong><p>Fixtures, standings, lineups, eventos e estatísticas, desde que a licença permita uso em SaaS.</p></div><a class="btn small" href="docs/api-provider-questions.md">Perguntas</a></div>
-          <div class="source-row" data-source-level="high"><span class="badge high">Alta confiança</span><div><strong>ge / ESPN / UOL / Lance</strong><p>Usar como contexto editorial com link e resumo próprio. Não copiar texto nem raspar automaticamente.</p></div><a class="btn small" href="docs/source-matrix.md">Matriz</a></div>
-          <div class="source-row" data-source-level="mid"><span class="badge mid">Verificar</span><div><strong>Setoristas e jornais locais</strong><p>Úteis para provável escalação, treino e clima, mas não devem virar fato confirmado sem validação.</p></div><a class="btn small" href="briefing.html#alertas">Alertas</a></div>
-          <div class="source-row" data-source-level="bad"><span class="badge bad">Cuidado</span><div><strong>Redes sociais / rumores</strong><p>Não usar como confirmação isolada. Fora do Modo Seguro.</p></div><a class="btn small" href="legal.html">Conduta</a></div>
-        </section>
-
-        <section class="section grid g3">
-          <div class="card"><span class="badge ok">Confirmado</span><h3>Pode ir ao ar</h3><p>Informação oficial ou licenciada, sem conflito e com horário de checagem.</p></div>
-          <div class="card"><span class="badge mid">Verificar</span><h3>Precisa revisão</h3><p>Útil para produção, mas deve ser reconfirmada antes da transmissão.</p></div>
-          <div class="card"><span class="badge bad">Bloqueado</span><h3>Fora do Modo Seguro</h3><p>Rumor, fonte fraca, scraping não autorizado ou conflito não resolvido.</p></div>
+        <section class="section card">
+          <h3>Fontes do briefing</h3>
+          <div class="actions"><button class="btn small dark" data-source-filter="all">Todas</button><button class="btn small" data-source-filter="ok">Confirmadas</button><button class="btn small" data-source-filter="high">Alta confiança</button><button class="btn small" data-source-filter="mid">Verificar</button><button class="btn small" data-source-filter="bad">Cuidado</button></div>
+          <div class="source-row" data-source-level="ok"><span class="badge ok">Confirmado</span><div><strong>Competição / regulamento</strong><p>Ficha da partida, rodada, estádio, cartões e suspensões oficiais.</p></div><span class="badge neutral">Atualizado 09:32</span></div>
+          <div class="source-row" data-source-level="ok"><span class="badge ok">Confirmado</span><div><strong>Sites oficiais dos clubes</strong><p>Relacionados, coletivas, comunicados e retornos confirmados.</p></div><span class="badge neutral">Atualizado 09:35</span></div>
+          <div class="source-row" data-source-level="high"><span class="badge high">Alta confiança</span><div><strong>API esportiva licenciada</strong><p>Calendário, tabela, H2H, eventos e estatísticas estruturadas.</p></div><span class="badge neutral">Contrato necessário</span></div>
+          <div class="source-row" data-source-level="high"><span class="badge high">Alta confiança</span><div><strong>Veículos editoriais confiáveis</strong><p>Contexto, bastidores e prováveis escalações com link e resumo próprio.</p></div><span class="badge neutral">Sem copiar texto</span></div>
+          <div class="source-row" data-source-level="mid"><span class="badge mid">Verificar</span><div><strong>Setoristas locais</strong><p>Úteis para treino, dúvida e provável escalação. Não entram como confirmado.</p></div><span class="badge neutral">Revisar</span></div>
+          <div class="source-row" data-source-level="bad"><span class="badge bad">Cuidado</span><div><strong>Rede social isolada</strong><p>Fica bloqueada no Modo Seguro até confirmação por fonte forte.</p></div><span class="badge neutral">Bloqueado</span></div>
         </section>
 
         <section class="section card">
-          <span class="kicker">Auditoria</span>
-          <h3>Trilha do briefing</h3>
-          <div class="timeline">
-            <div class="source-row"><span class="badge ok">09:32</span><div><strong>Briefing gerado</strong><p>Score inicial 96%. Ficha e contexto estruturados.</p></div><span class="badge high">Sistema</span></div>
-            <div class="source-row"><span class="badge mid">09:38</span><div><strong>Alerta criado</strong><p>Escalações prováveis exigem confirmação antes do ar.</p></div><span class="badge mid">Revisar</span></div>
-            <div class="source-row"><span class="badge ok">09:41</span><div><strong>Modo Seguro atualizado</strong><p>Itens frágeis removidos da tela de cabine.</p></div><span class="badge ok">Seguro</span></div>
-          </div>
+          <h3>Auditoria do briefing</h3>
+          <div class="source-row"><span class="badge ok">09:32</span><div><strong>Briefing gerado</strong><p>Ficha, resumo e contexto criados com score inicial 96%.</p></div><span class="badge high">Sistema</span></div>
+          <div class="source-row"><span class="badge mid">09:38</span><div><strong>Alerta criado</strong><p>Escalações e pendurados precisam de checagem final antes do ar.</p></div><span class="badge mid">Revisar</span></div>
+          <div class="source-row"><span class="badge ok">09:41</span><div><strong>Modo Seguro aplicado</strong><p>Itens de risco foram ocultados da cabine.</p></div><span class="badge ok">Seguro</span></div>
         </section>
       </section>
     </main>
   </div>
-  <nav class="bottom-nav"><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a><a href="legal.html">Legal</a></nav>
+  <nav class="bottom-nav"><a href="app.html">Home</a><a href="novo-briefing.html">Criar</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a></nav>
   <div class="toast"></div>
   <script src="assets/js/main.js"></script>
 </body>
