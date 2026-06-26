@@ -7,35 +7,32 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="nav">
-      <a class="brand" href="index.html"><span class="logo">CP</span><span><h1>Cabine Pro</h1><p>Segurança e conduta</p></span></a>
-      <nav class="links">
-        <a href="index.html">Produto</a><a href="login.html">Login</a><a href="app.html">Demo</a><a href="fontes.html">Fontes</a><a class="active" href="legal.html">Segurança</a>
-        <button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button>
-      </nav>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="index.html"><span class="logo">CP</span><span class="brand-title"><h1>Cabine Pro</h1><p>Segurança</p></span></a>
+      <nav class="navlinks"><a href="index.html">Produto</a><a href="app.html">App</a><a href="fontes.html">Fontes</a><a class="active" href="legal.html">Segurança</a><button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button></nav>
     </header>
 
     <main class="section">
-      <div class="section-head"><div><span class="kicker">Políticas do protótipo</span><h2>Segurança, disclaimer e conduta.</h2><p>Estes textos são placeholders para validação do produto. Antes de vender, precisam de revisão jurídica/técnica.</p></div></div>
+      <div class="section-head"><div><span class="kicker">Trust & Safety</span><h2>Segurança editorial e privacidade.</h2><p>Cabine Pro é desenhado para reduzir risco: deixa claro o que é fato, o que é contexto e o que precisa de revisão.</p></div></div>
       <div class="grid g3">
-        <article class="card"><span class="badge bad">Obrigatório</span><h3>Disclaimer editorial</h3><p>Cabine Pro é apoio editorial. Não substitui fontes oficiais, checagem jornalística, responsabilidade humana ou licença de dados. Informações marcadas como Verificar ou Cuidado não devem ser apresentadas como fato confirmado.</p></article>
-        <article class="card"><span class="badge ok">Segurança</span><h3>Privacidade e acesso</h3><p>No protótipo, nada é enviado. No produto real, será necessário autenticação segura, permissões de equipe, logs, exclusão de dados e revisão LGPD/GDPR.</p></article>
-        <article class="card"><span class="badge high">Conduta</span><h3>Uso responsável</h3><p>É proibido usar rumor como fato, copiar conteúdo protegido, remover alertas críticos para parecer mais confiável ou espalhar desinformação.</p></article>
+        <article class="card"><span class="badge bad">Disclaimer</span><h3>Apoio editorial</h3><p>Cabine Pro não substitui fontes oficiais, checagem jornalística ou responsabilidade editorial humana. O usuário decide o que vai ao ar.</p></article>
+        <article class="card"><span class="badge ok">Privacidade</span><h3>Dados do usuário</h3><p>Em produção, contas terão autenticação segura, controle de acesso, logs e opção de exclusão de dados.</p></article>
+        <article class="card"><span class="badge high">Uso responsável</span><h3>Conduta</h3><p>Rumor, conflito e informação sem fonte não devem ser apresentados como fato confirmado.</p></article>
       </div>
 
       <section class="section card">
         <span class="kicker">Política de fontes</span>
-        <h3>O que pode e não pode</h3>
+        <h3>Como o produto trata informação</h3>
         <div class="grid g2">
-          <div><span class="badge ok">Permitido no protótipo</span><ul><li>Dados simulados.</li><li>Links manuais.</li><li>Resumo próprio.</li><li>Fontes oficiais como referência.</li></ul></div>
-          <div><span class="badge bad">Bloqueado sem licença</span><ul><li>Scraping de sites esportivos.</li><li>Copiar matérias.</li><li>Republicar base de dados.</li><li>Usar logos/escudos sem permissão.</li></ul></div>
+          <div><span class="badge ok">Permitido</span><ul><li>fontes oficiais;</li><li>APIs licenciadas;</li><li>links e resumos próprios;</li><li>contexto editorial com atribuição.</li></ul></div>
+          <div><span class="badge bad">Bloqueado</span><ul><li>copiar matérias;</li><li>scraping não autorizado;</li><li>usar rumor como fato;</li><li>usar marcas/escudos sem permissão.</li></ul></div>
         </div>
-        <div class="actions"><a class="btn" href="docs/source-policy.md">Ver source policy</a><a class="btn" href="docs/legal-risk-register.md">Ver riscos</a><a class="btn primary" href="fontes.html">Ver fontes na demo</a></div>
+        <div class="actions"><a class="btn primary" href="fontes.html">Abrir Trust Center</a><a class="btn" href="app.html">Voltar ao app</a></div>
       </section>
     </main>
   </div>
-  <nav class="bottom-nav"><a href="index.html">Produto</a><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="fontes.html">Fontes</a><a href="legal.html">Legal</a></nav>
+  <nav class="bottom-nav"><a href="index.html">Produto</a><a href="app.html">App</a><a href="briefing.html">Briefing</a><a href="fontes.html">Fontes</a><a href="legal.html">Legal</a></nav>
   <div class="toast"></div>
   <script src="assets/js/main.js"></script>
 </body>
