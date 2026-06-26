@@ -1,53 +1,43 @@
 # Cabine Pro
 
-Cabine Pro é um produto de briefing pré-jogo para narradores, comentaristas, produtores, criadores de conteúdo e entusiastas de futebol.
+Cabine Pro é uma plataforma de briefing pré-jogo para narradores, comentaristas, produtores, criadores de conteúdo e entusiastas de futebol.
 
 A proposta não é apenas gerar texto com IA. A proposta é entregar um briefing de transmissão com **fonte, confiança, rastreabilidade e Modo Seguro**.
 
-> A IA organiza. A fonte valida. O narrador decide.
+> A IA organiza. A fonte valida. O usuário decide o que vai ao ar.
 
 ## Status
 
-Protótipo premium multi-page para validar com usuários reais, especialmente narradores/produtores.
+Protótipo de produto para teste com fluxo real de usuário.
 
-Nesta fase, os dados são simulados. O objetivo é validar produto, fluxo, UX, confiança e valor percebido antes de integrar APIs pagas ou vender oficialmente.
+Nesta fase, os dados são simulados. O objetivo é testar experiência, clareza, fluxo, confiança e valor percebido antes de integrar APIs pagas ou vender oficialmente.
 
-## Estrutura do protótipo
+## Fluxo principal
 
 ```txt
-cabine-pro/
-  index.html              # Landing page
-  login.html              # Login/demo
-  app.html                # Dashboard logado + criar briefing
-  briefing.html           # Briefing completo da partida
-  cabine.html             # Modo Cabine
-  fontes.html             # Fontes, confiança e auditoria
-  validar.html            # Roteiro para validar com amigo
-  legal.html              # Segurança, disclaimer e conduta
-  assets/
-    css/styles.css        # Design system + dark mode
-    js/main.js            # Toggle dark mode + interações
-  docs/                   # Documentação de produto, fontes e validação
-  .github/ISSUE_TEMPLATE/ # Templates de bug, validação, fonte e segurança
+index.html          # Landing page
+login.html          # Login de entrada
+app.html            # Dashboard do produto
+novo-briefing.html  # Criação de briefing
+briefing.html       # Briefing completo da partida
+cabine.html         # Modo Cabine
+fontes.html         # Trust Center: fontes e auditoria
+legal.html          # Segurança, disclaimer e conduta
 ```
 
-## Como testar
+## Como testar como usuário
 
-Abra `index.html` no navegador ou publique como site estático.
-
-Fluxo recomendado:
-
-1. `index.html` — entender a proposta.
-2. `login.html` — entrar na demo.
-3. `app.html` — criar/abrir briefing.
-4. `briefing.html` — revisar conteúdo e alertas.
-5. `cabine.html` — testar Modo Cabine.
-6. `fontes.html` — revisar fontes e auditoria.
-7. `validar.html` — coletar feedback do usuário.
+1. Abrir `index.html`.
+2. Clicar em **Começar**.
+3. Entrar pela tela de login.
+4. Criar um novo briefing ou abrir o briefing pronto.
+5. Revisar o briefing.
+6. Abrir o Modo Cabine.
+7. Conferir fontes e auditoria.
 
 ## Dark mode
 
-Todas as páginas têm toggle **Dark/Light** na navegação. A preferência fica salva no navegador via `localStorage`.
+Todas as páginas têm toggle **Dark/Light** na navegação. A preferência fica salva no navegador.
 
 ## Regras de confiança
 
@@ -62,12 +52,4 @@ O Modo Seguro só deve mostrar informações que possam ser usadas ao vivo com s
 
 ## Publicar
 
-O protótipo é estático e pode ser publicado em:
-
-- GitHub Pages;
-- Vercel;
-- Netlify.
-
-## Próximo passo
-
-Publicar o site e validar com um narrador/produtor usando o roteiro de `validar.html`.
+O protótipo é estático e pode ser publicado em GitHub Pages, Vercel ou Netlify.
