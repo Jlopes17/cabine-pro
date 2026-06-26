@@ -7,60 +7,58 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="nav">
-      <a class="brand" href="index.html"><span class="logo">CP</span><span><h1>Cabine Pro</h1><p>Área logada</p></span></a>
-      <nav class="links">
-        <a href="index.html">Produto</a><a href="login.html">Login</a><a class="active" href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a>
-        <button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button>
-      </nav>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="app.html"><span class="logo">CP</span><span class="brand-title"><h1>Cabine Pro</h1><p>Workspace</p></span></a>
+      <nav class="navlinks"><a class="active" href="app.html">Dashboard</a><a href="novo-briefing.html">Novo briefing</a><a href="briefing.html">Briefing</a><button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button><a class="btn primary" href="novo-briefing.html">Criar</a></nav>
     </header>
 
-    <main class="section app-layout">
+    <main class="section app-shell">
       <aside class="sidebar">
         <a class="active" href="app.html">Visão geral</a>
-        <a href="briefing.html">Briefing exemplo</a>
+        <a href="novo-briefing.html">Novo briefing</a>
+        <a href="briefing.html">Briefings</a>
         <a href="cabine.html">Modo Cabine</a>
-        <a href="fontes.html">Fontes e auditoria</a>
-        <a href="validar.html">Validar com amigo</a>
+        <a href="fontes.html">Fontes</a>
+        <div class="sep"></div>
         <a href="legal.html">Segurança</a>
       </aside>
 
       <section>
-        <div class="section-head"><div><span class="kicker">Dashboard</span><h2>Pronto para validar.</h2><p>Esta é a área logada. Para o teste, o usuário entende rapidamente o próximo jogo, a confiança e o caminho para gerar/usar um briefing.</p></div></div>
+        <div class="appbar"><div><span class="kicker">Bom dia</span><h2>Seu próximo briefing está pronto.</h2><p style="color:var(--muted);margin:6px 0 0">Revise alertas, abra o modo cabine ou crie um novo briefing.</p></div><a class="btn primary" href="novo-briefing.html">Novo briefing</a></div>
 
         <div class="grid g4">
-          <div class="card"><span class="badge ok">Hoje</span><h3>Briefings</h3><p style="font-size:30px;color:var(--navy);font-weight:1000;margin:0">3</p></div>
-          <div class="card"><span class="badge high">Média</span><h3>Confiança</h3><p style="font-size:30px;color:var(--navy);font-weight:1000;margin:0">96%</p></div>
-          <div class="card"><span class="badge mid">Revisão</span><h3>Alertas</h3><p style="font-size:30px;color:var(--navy);font-weight:1000;margin:0">2</p></div>
-          <div class="card"><span class="badge neutral">Estimado</span><h3>Tempo salvo</h3><p style="font-size:30px;color:var(--navy);font-weight:1000;margin:0">2h</p></div>
+          <div class="card compact"><span class="badge ok">Prontos</span><div class="stat"><span class="stat-num">3</span><span>briefings</span></div></div>
+          <div class="card compact"><span class="badge high">Média</span><div class="stat"><span class="stat-num">96%</span><span>confiança</span></div></div>
+          <div class="card compact"><span class="badge mid">Ação</span><div class="stat"><span class="stat-num">2</span><span>alertas</span></div></div>
+          <div class="card compact"><span class="badge neutral">Plano</span><div class="stat"><span class="stat-num">Pro</span><span>fundador</span></div></div>
         </div>
 
         <section class="section card">
-          <span class="kicker">Criar briefing</span>
-          <h2 style="margin:8px 0 8px;color:var(--navy);letter-spacing:-.05em">Escolha o jogo</h2>
-          <p>Para validação, o fluxo usa dados demo. No MVP real, esta etapa buscará dados licenciados e fontes oficiais.</p>
-          <form class="form" data-create-briefing style="margin-top:16px">
-            <div class="grid g2">
-              <div class="field"><label>Jogo</label><select><option>Flamengo x Palmeiras</option><option>Grêmio x Internacional</option><option>Corinthians x São Paulo</option></select></div>
-              <div class="field"><label>Competição</label><select><option>Brasileirão Série A</option><option>Copa do Brasil</option><option>Libertadores</option></select></div>
-              <div class="field"><label>Data</label><input class="input" type="date" value="2026-07-12" /></div>
-              <div class="field"><label>Perfil</label><select><option>Narrador</option><option>Comentarista</option><option>Produtor</option><option>Entusiasta</option></select></div>
+          <div class="match-row">
+            <div>
+              <span class="badge ok">Pronto para transmissão</span>
+              <div class="match-title"><span class="team"><span class="crest">FL</span>Flamengo</span><strong>VS</strong><span class="team"><span class="crest">PA</span>Palmeiras</span></div>
+              <p>Brasileirão Série A · Rodada 22 · Maracanã · 96% de confiança · 2 alertas para revisão.</p>
             </div>
-            <div class="field"><label>Foco extra</label><textarea placeholder="Ex: histórico, pendurados, lesões, mercado e narrativas para abertura."></textarea></div>
-            <div class="actions"><button class="btn primary" type="submit">Gerar briefing</button><a class="btn" href="briefing.html">Abrir exemplo pronto</a></div>
-          </form>
+            <div class="actions" style="margin:0"><a class="btn primary" href="briefing.html">Abrir briefing</a><a class="btn" href="cabine.html">Cabine</a></div>
+          </div>
         </section>
 
         <section class="section grid g3">
-          <a class="card" href="briefing.html"><span class="badge ok">96%</span><h3>Flamengo x Palmeiras</h3><p>Briefing pronto com 2 alertas antes do ar.</p></a>
-          <a class="card" href="cabine.html"><span class="badge high">Modo Seguro</span><h3>Abrir Cabine</h3><p>Texto grande, copy rápido e filtro de risco.</p></a>
-          <a class="card" href="fontes.html"><span class="badge mid">Revisão</span><h3>Fontes e auditoria</h3><p>Veja origem, nível de confiança e histórico.</p></a>
+          <a class="card" href="novo-briefing.html"><span class="badge high">Criar</span><h3>Novo briefing</h3><p>Escolha partida, competição, perfil e foco do material.</p></a>
+          <a class="card" href="fontes.html"><span class="badge mid">Revisar</span><h3>Fontes e auditoria</h3><p>Veja origem, riscos, atualização e confiança por fonte.</p></a>
+          <a class="card" href="cabine.html"><span class="badge ok">Ao vivo</span><h3>Modo Cabine</h3><p>Tela limpa com texto grande e Modo Seguro.</p></a>
+        </section>
+
+        <section class="section card">
+          <h3>Briefings recentes</h3>
+          <table class="table"><thead><tr><th>Partida</th><th>Status</th><th>Confiança</th><th>Ação</th></tr></thead><tbody><tr><td>Flamengo x Palmeiras</td><td><span class="badge ok">Pronto</span></td><td>96%</td><td><a class="btn small" href="briefing.html">Abrir</a></td></tr><tr><td>Grêmio x Internacional</td><td><span class="badge mid">Revisar</span></td><td>89%</td><td><a class="btn small" href="novo-briefing.html">Gerar</a></td></tr><tr><td>Corinthians x São Paulo</td><td><span class="badge high">Rascunho</span></td><td>92%</td><td><a class="btn small" href="novo-briefing.html">Continuar</a></td></tr></tbody></table>
         </section>
       </section>
     </main>
   </div>
-  <nav class="bottom-nav"><a href="index.html">Produto</a><a href="app.html">Demo</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a></nav>
+  <nav class="bottom-nav"><a href="app.html">Home</a><a href="novo-briefing.html">Criar</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a></nav>
   <div class="toast"></div>
   <script src="assets/js/main.js"></script>
 </body>
