@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novo briefing — Cabine Pro</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="app.html"><span class="logo">CP</span><span class="brand-title"><h1>Cabine Pro</h1><p>Novo briefing</p></span></a>
+      <nav class="navlinks"><a href="app.html">Dashboard</a><a class="active" href="novo-briefing.html">Criar</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><button class="theme-toggle" data-theme-toggle type="button">🌙 Dark</button></nav>
+    </header>
+
+    <main class="section app-shell">
+      <aside class="sidebar"><a href="app.html">Visão geral</a><a class="active" href="novo-briefing.html">Novo briefing</a><a href="briefing.html">Briefings</a><a href="cabine.html">Modo Cabine</a><a href="fontes.html">Fontes</a></aside>
+      <section>
+        <div class="appbar"><div><span class="kicker">Criar</span><h2>Novo briefing</h2><p style="color:var(--muted);margin:6px 0 0">Preencha o mínimo necessário. O sistema gera o briefing e destaca o que precisa de revisão.</p></div></div>
+        <form class="card form" data-create-briefing>
+          <div class="grid g2">
+            <div class="field"><label>Partida</label><select><option>Flamengo x Palmeiras</option><option>Grêmio x Internacional</option><option>Corinthians x São Paulo</option></select></div>
+            <div class="field"><label>Competição</label><select><option>Brasileirão Série A</option><option>Copa do Brasil</option><option>Libertadores</option><option>Sul-Americana</option></select></div>
+            <div class="field"><label>Data</label><input class="input" type="date" value="2026-07-12" /></div>
+            <div class="field"><label>Perfil de uso</label><select><option>Narrador</option><option>Comentarista</option><option>Produtor</option><option>Criador de conteúdo</option></select></div>
+          </div>
+          <div class="field"><label>Profundidade</label><select><option>Completo para transmissão</option><option>Rápido para pré-jogo</option><option>Foco em estatísticas</option><option>Foco em narrativas</option></select></div>
+          <div class="field"><label>Foco extra</label><textarea placeholder="Ex: quero mais histórico, pendurados, lesões, mercado e frases rápidas para abertura."></textarea></div>
+          <div class="grid g3">
+            <label class="check"><input type="checkbox" checked /> Incluir Modo Cabine</label>
+            <label class="check"><input type="checkbox" checked /> Exigir fontes por bloco</label>
+            <label class="check"><input type="checkbox" checked /> Ativar Modo Seguro</label>
+          </div>
+          <div class="actions"><button class="btn primary" type="submit">Gerar briefing</button><a class="btn" href="app.html">Cancelar</a></div>
+        </form>
+
+        <section class="section grid g3">
+          <div class="card"><span class="badge ok">Seguro</span><h3>Confirmado</h3><p>Ficha, tabela, competição e regulamento entram como base do briefing.</p></div>
+          <div class="card"><span class="badge mid">Revisão</span><h3>Prováveis</h3><p>Escalações e lesões ficam marcadas até confirmação final.</p></div>
+          <div class="card"><span class="badge bad">Bloqueio</span><h3>Rumores</h3><p>Não entram no Modo Cabine sem confirmação ou segunda fonte confiável.</p></div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <nav class="bottom-nav"><a href="app.html">Home</a><a href="novo-briefing.html">Criar</a><a href="briefing.html">Briefing</a><a href="cabine.html">Cabine</a><a href="fontes.html">Fontes</a></nav>
+  <div class="toast"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
