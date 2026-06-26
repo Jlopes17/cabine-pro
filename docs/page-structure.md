@@ -1,36 +1,34 @@
 # Page Structure
 
-O protótipo foi separado em páginas para evitar a sensação de tudo amontoado.
+O protótipo está organizado como um produto SaaS estático, com páginas separadas por intenção do usuário.
 
 ## Páginas públicas
 
 ### `index.html`
-Landing page. Explica o produto, valor, segurança e CTA para demo.
+Landing page do produto. Explica valor, segurança, planos e CTA.
 
 ### `login.html`
-Login simulado. Mostra aceite de disclaimer e entrada para a área logada.
+Tela de entrada. Simula autenticação e leva ao dashboard.
 
 ### `legal.html`
-Segurança, disclaimer editorial, política de fontes e conduta.
+Segurança, privacidade, disclaimer editorial e conduta.
 
-## Páginas da área logada
+## Área do produto
 
 ### `app.html`
-Dashboard. Mostra visão geral, próximo jogo e formulário para criar briefing.
+Dashboard do usuário com visão geral, próximo briefing e ações principais.
+
+### `novo-briefing.html`
+Tela de criação de briefing.
 
 ### `briefing.html`
-Briefing completo da partida, separado por seções.
+Briefing completo da partida, organizado em seções.
 
 ### `cabine.html`
-Modo Cabine, com Modo Seguro, copiar abertura, aumentar/diminuir fonte e tela cheia.
+Modo Cabine com Modo Seguro, texto grande e controles de leitura.
 
 ### `fontes.html`
-Fontes, níveis de confiança, riscos e auditoria.
-
-## Página de validação
-
-### `validar.html`
-Roteiro para testar com narrador/produtor e registrar feedback.
+Trust Center com fontes, níveis de confiança, riscos e auditoria.
 
 ## Assets compartilhados
 
@@ -39,4 +37,4 @@ Roteiro para testar com narrador/produtor e registrar feedback.
 
 ## Dark mode
 
-O toggle de dark mode está na navegação de todas as páginas e salva preferência no navegador.
+Todas as páginas possuem toggle Dark/Light na navegação e salvam preferência no navegador.
