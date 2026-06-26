@@ -1,0 +1,19 @@
+{
+  "name": "cabine-pro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cabine Pro — premium football briefing prototype focused on trust, sources and broadcast readiness.",
+  "scripts": {
+    "start": "npx serve .",
+    "validate:static": "echo 'Static prototype: open index.html or deploy with GitHub Pages/Vercel/Netlify'"
+  },
+  "keywords": [
+    "football",
+    "briefing",
+    "broadcast",
+    "sports",
+    "trust",
+    "prototype"
+  ],
+  "license": "UNLICENSED"
+}
